@@ -1,2 +1,2 @@
 # nvim
-setting of Neovim
+setting of Neovim using `vimscript`
