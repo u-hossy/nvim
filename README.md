@@ -4,7 +4,7 @@ setting of Neovim
 # How to use
 
 ```bash
-  mkdir ./config
-  cd .config
-  git clone <git-repo>
+mkdir ./config
+cd .config
+git clone <git-repo>
 ```
