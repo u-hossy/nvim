@@ -1,1 +1,4 @@
-vim.opt.number = true
+require("options")
+require('keymaps')
+require('appearance')
+require('plugins')
