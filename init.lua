@@ -1,4 +1,5 @@
 require("options")
-require('keymaps')
-require('appearance')
-require('plugins')
+require("keymaps")
+require("appearance")
+require("autocmd")
+require("plugins")
