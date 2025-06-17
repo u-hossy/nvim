@@ -1,4 +1,5 @@
 # nvim
+
 setting of Neovim
 
 # How to use
