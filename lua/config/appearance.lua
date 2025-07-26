@@ -6,7 +6,7 @@ vim.opt.cursorline = true
 
 -- catppuccin/nvim の詳細設定
 require("catppuccin").setup({
-    flavour = "frappe", -- latte, frappe, macchiato, mocha
+    flavour = "macchiato", -- latte, frappe, macchiato, mocha
     background = { -- :h background
         light = "latte",
         dark = "mocha",
