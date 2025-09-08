@@ -1,3 +1,4 @@
+-- 標準機能
 -- 折り返し時に表示行単位での移動できるようにする
 vim.keymap.set("n", "j", "gj", { desc = "移動: 次の表示行へ" })
 vim.keymap.set("n", "k", "gk", { desc = "移動: 前の表示行へ" })
@@ -17,4 +18,15 @@ vim.keymap.set("n", "<C-@>", "<C-l>", { desc = "ノーマルモード: 画面再
 vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR><Esc>", { desc = "検索ハイライト解除" })
 
 -- ターミナルの挿入モードからの離脱をESCに割り当てる
-vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", {desc = "挿入モードから離脱"})
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "挿入モードから離脱" })
+
+-- プラグイン
+-- space でカスタムキーバインドを使用するモードにする
+vim.g.mapleader = " "
+
+-- nvim-telescope/telescope.nvim
+local builtin = require("telescope.builtin")
+vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
+vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
+vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
+vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })

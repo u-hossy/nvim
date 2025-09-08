@@ -1,3 +1,7 @@
+-- アクティブなバッファの編集を有効化
+-- （プラグインインストール時のエラー回避のため）
+vim.api.nvim_buf_set_option(0, "modifiable", true)
+
 -- 文字コードをUTF-8に設定
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
