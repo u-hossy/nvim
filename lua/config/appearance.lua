@@ -38,7 +38,9 @@ require("catppuccin").setup({
 		-- miscs = {}, -- Uncomment to turn off hard-coded styles
 	},
 	color_overrides = {},
-	custom_highlights = {},
+	custom_highlights = {
+		LineNr = { fg = "#a6adc8" }, -- Change line number to Subtext0 (#a6adc8)
+	},
 	default_integrations = true,
 	integrations = {
 		cmp = true,
