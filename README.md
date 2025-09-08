@@ -2,7 +2,9 @@
 
 setting of Neovim
 
-# How to use
+## How to use
+
+Put this repo in `~/.config` as `nvim`
 
 ```bash
 mkdir ~/.config
