@@ -29,6 +29,7 @@ require("lazy").setup({
 		{ "nvim-lua/plenary.nvim" },
 		{ "nvim-telescope/telescope.nvim", branch = "0.1.x", dependencies = { "nvim-lua/plenary.nvim" } },
 		{ "windwp/nvim-autopairs", event = "InsertEnter", config = true },
+		{ "stevearc/conform.nvim", opt = {} },
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
