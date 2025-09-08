@@ -2,7 +2,7 @@
 
 setting of Neovim
 
-# How to use
+## How to use
 
 ```bash
 mkdir ~/.config
