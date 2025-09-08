@@ -17,4 +17,4 @@ vim.keymap.set("n", "<C-@>", "<C-l>", { desc = "ノーマルモード: 画面再
 vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR><Esc>", { desc = "検索ハイライト解除" })
 
 -- ターミナルの挿入モードからの離脱をESCに割り当てる
-vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", {desc = "挿入モードから離脱"})
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "挿入モードから離脱" })
