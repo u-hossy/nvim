@@ -1,9 +1,14 @@
 -- stevearc/conform.nvim
 require("conform").setup({
 	formatters_by_ft = {
+		css = { "prettier", stop_after_first = true },
+		javascript = { "prettier", stop_after_first = true },
+		json = { "prettier", stop_after_first = true },
+		html = { "prettier", stop_after_first = true },
 		lua = { "stylua" },
-		markdown = { "prettier" },
-		yaml = { "yamlfmt" },
+		markdown = { "prettier", stop_after_first = true },
+		typescript = { "prettier", stop_after_first = true },
+		yaml = { "prettier", "yamlfmt", stop_after_first = true },
 	},
 })
 
