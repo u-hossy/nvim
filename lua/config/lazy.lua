@@ -25,11 +25,32 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
 	spec = {
 		-- import your plugins
-		{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-		{ "nvim-lua/plenary.nvim" },
-		{ "nvim-telescope/telescope.nvim", branch = "0.1.x", dependencies = { "nvim-lua/plenary.nvim" } },
-		{ "windwp/nvim-autopairs", event = "InsertEnter", config = true },
-		{ "stevearc/conform.nvim", opt = {} },
+		{
+			"catppuccin/nvim",
+			name = "catppuccin",
+			priority = 1000,
+		},
+		{
+			"nvim-lua/plenary.nvim",
+		},
+		{
+			"nvim-telescope/telescope.nvim",
+			branch = "0.1.x",
+			dependencies = { "nvim-lua/plenary.nvim" },
+		},
+		{
+			"windwp/nvim-autopairs",
+			event = "InsertEnter",
+			config = true,
+		},
+		{
+			"stevearc/conform.nvim",
+			opt = {},
+		},
+		{
+			"mason-org/mason.nvim",
+			opts = {},
+		},
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
