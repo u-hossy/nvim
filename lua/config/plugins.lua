@@ -1,16 +1,14 @@
 -- stevearc/conform.nvim
 require("conform").setup({
 	formatters_by_ft = {
-		-- examples
+		css = { "prettier", stop_after_first = true },
+		javascript = { "prettier", stop_after_first = true },
+		json = { "prettier", stop_after_first = true },
+		html = { "prettier", stop_after_first = true },
 		lua = { "stylua" },
-		-- Conform will run multiple formatters sequentially
-		-- python = { "isort", "black" },
-		-- You can customize some of the format options for the filetype (:help conform.format)
-		-- = "fallback" means execute format when the other fails
-		-- rust = { "rustfmt", lsp_format = "fallback" },
-		-- Conform will run the first available formatter
-		-- javascript = { "prettierd", "prettier", stop_after_first = true },
-		yaml = { "yamlfmt" },
+		markdown = { "prettier", stop_after_first = true },
+		typescript = { "prettier", stop_after_first = true },
+		yaml = { "prettier", "yamlfmt", stop_after_first = true },
 	},
 })
 
