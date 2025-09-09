@@ -11,3 +11,15 @@ mkdir ~/.config
 cd ~/.config
 git clone <git-repo>
 ```
+
+## Formatters
+
+### Lua
+
+- [stylua](https://github.com/JohnnyMorganz/StyLua)
+
+### Yaml
+
+- [yamlfmt](https://github.com/google/yamlfmt)
+    - Installs at `$HOME/go/bin/`
+
