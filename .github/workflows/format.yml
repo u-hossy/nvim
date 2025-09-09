@@ -1,18 +1,14 @@
 name: format-lua
-
 on: push
-
-jobs: 
-    format:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v4
-
-            - name: format
-              uses: JohnnyMorganz/stylua-action@v4
-              with:
-                token: ${{ secrets.GITHUB_TOKEN }}
-                version: 2.1.0 # NOTE: we recommend pinning to a specific version in case of formatting changes
-                # CLI arguments
-                args: --check .
-
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: format
+        uses: JohnnyMorganz/stylua-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: 2.1.0 # NOTE: we recommend pinning to a specific version in case of formatting changes
+          # CLI arguments
+          args: --check .
