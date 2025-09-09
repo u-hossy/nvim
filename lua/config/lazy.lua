@@ -44,12 +44,23 @@ require("lazy").setup({
 			config = true,
 		},
 		{
-			"stevearc/conform.nvim",
-			opt = {},
+			"neovim/nvim-lspconfig",
 		},
 		{
 			"mason-org/mason.nvim",
 			opts = {},
+		},
+		{
+			"mason-org/mason-lspconfig.nvim",
+			opts = {},
+			dependencies = {
+				{ "mason-org/mason.nvim", opts = {} },
+				"neovim/nvim-lspconfig",
+			},
+		},
+		{
+			"stevearc/conform.nvim",
+			opt = {},
 		},
 	},
 	-- Configure any other settings here. See the documentation for more details.
