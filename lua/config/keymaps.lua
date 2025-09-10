@@ -20,10 +20,10 @@ vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR><Esc>", { desc = "検索ハイ
 -- ターミナルの挿入モードからの離脱をESCに割り当てる
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "挿入モードから離脱" })
 
--- プラグイン
--- space でカスタムキーバインドを使用するモードにする
+-- spaceを<leader>に割り当てる
 vim.g.mapleader = " "
 
+-- プラグイン
 -- nvim-telescope/telescope.nvim
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope: find files" })
