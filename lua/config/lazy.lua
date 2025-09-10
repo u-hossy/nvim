@@ -31,6 +31,15 @@ require("lazy").setup({
 			priority = 1000,
 		},
 		{
+			"nvim-tree/nvim-web-devicons",
+			opts = {},
+		},
+		{
+			"nvim-lualine/lualine.nvim",
+			opts = { theme = catppuccin },
+			dependencies = { "nvim-tree/nvim-web-devicons" },
+		},
+		{
 			"nvim-lua/plenary.nvim",
 		},
 		{
