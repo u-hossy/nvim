@@ -1,8 +1,5 @@
 name: Format
-on:
-  push:
-    paths:
-      - "**/*.lua"
+on: push
 
 jobs:
   format:
