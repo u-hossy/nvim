@@ -1,5 +1,9 @@
 name: Format
-on: push
+on:
+  push:
+    paths:
+      - "**/*.lua"
+
 jobs:
   format:
     runs-on: ubuntu-latest
